@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v1N-uI-4ot">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="contentStretch" x="0.050000000000000003" y="0.050000000000000003" width="1" height="1"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0OQ-ej-fEZ">
+                                <rect key="frame" x="99" y="360" width="194" height="71"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="登录成功">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="STSong"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="v1N-uI-4ot" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7NR-Oy-IyG"/>
+                            <constraint firstItem="v1N-uI-4ot" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="C7U-A7-e1A"/>
+                            <constraint firstItem="v1N-uI-4ot" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="J6P-ho-m1D"/>
+                            <constraint firstAttribute="bottom" secondItem="v1N-uI-4ot" secondAttribute="bottom" id="dVR-gx-is0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0OQ-ej-fEZ" secondAttribute="trailing" constant="136" id="eNk-Xr-fBB"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0OQ-ej-fEZ" secondAttribute="bottom" constant="248" id="iby-Vp-LWl"/>
+                            <constraint firstAttribute="trailing" secondItem="v1N-uI-4ot" secondAttribute="trailing" id="n3t-2i-vh2"/>
+                            <constraint firstItem="v1N-uI-4ot" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rRs-4f-0x7"/>
+                            <constraint firstItem="0OQ-ej-fEZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="398" id="tCu-EM-VZf"/>
+                            <constraint firstItem="v1N-uI-4ot" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vr8-22-yea"/>
+                            <constraint firstAttribute="trailing" secondItem="v1N-uI-4ot" secondAttribute="trailing" id="xsv-Ts-jcB"/>
+                            <constraint firstItem="0OQ-ej-fEZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="136" id="yhX-pF-N2Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="iv" destination="v1N-uI-4ot" id="M8p-Bt-DuU"/>
+                        <outlet property="label" destination="0OQ-ej-fEZ" id="gYn-YI-lQ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104.8" y="184.85757121439281"/>
+        </scene>
+    </scenes>
+</document>
